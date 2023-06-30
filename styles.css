@@ -22,3 +22,9 @@ h6 {
   font-weight: 400;
   line-height: 1.2;
 }
+
+.wrapper {
+  padding: 0 var(--wrapper);
+  max-width: var(--desktop);
+  margin: auto;
+}
