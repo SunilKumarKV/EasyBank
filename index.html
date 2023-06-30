@@ -209,6 +209,22 @@
         </div>
     </footer>
 
+    <script>
+      const menu = document.querySelector('#menu')
+      const mediaScreen = window.matchMedia('screen and (min-width: 1024px)')
+      mediaScreen.addListener(handleMediaScreen)
+
+      /**
+       * Set the checked attribute of checkbox menu to false
+       */
+      function handleMediaScreen(event) {
+        if (event.matches && menu.checked) {
+          console.log('Set checked to false')
+          menu.checked = false
+        }
+      }
+    </script>
+
 </body>
 
 </html>
