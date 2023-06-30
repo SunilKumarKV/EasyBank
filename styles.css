@@ -1,1 +1,12 @@
 
+body {
+  margin: 0;
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--grayishBlue);
+  background-color: var(--white);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
