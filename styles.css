@@ -29,4 +29,8 @@ h6 {
   margin: auto;
 }
 
-
+.title__primary {
+  color: rgb(45, 49, 77);
+  font-size: 2em;
+  font-weight: 400;
+}
