@@ -34,3 +34,15 @@ h6 {
   font-size: 2em;
   font-weight: 400;
 }
+
+.title__secondary{
+    color: rgb(45, 49, 77);
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.title__tertiary{
+    color: rgb(45, 49, 77);
+    font-size: 0.85em;
+    font-weight: 400;
+}
