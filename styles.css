@@ -46,3 +46,47 @@ h6 {
     font-size: 0.85em;
     font-weight: 400;
 }
+
+.menu{
+  display: none;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__item{
+  padding: 0 1em;
+}
+
+.menu__link{
+  color: rgb(150, 152, 166);
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.menu__hamburger{
+  background: url("./Images/icon-hamburger.svg") no-repeat center;
+  width: 24px;
+}
+
+.menu__checkbox{
+display: none;
+}
+
+.menu__checkbox:checked ~ .menu {
+display: black;
+background: linear-gradient(to botton, var(darkblue) 0%, transparent 100%);
+position: absolute;
+height: 100vh;
+padding: 24px 24px;
+top: 100%;
+left: 0;
+right: 0;
+z-index: 2;
+}
+
+.menu__checkbox:checked ~ .menu__hamburger{
+  background: url(./Images/icon-close.svg) no-repeat center;
+}
