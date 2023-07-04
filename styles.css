@@ -90,3 +90,34 @@ z-index: 2;
 .menu__checkbox:checked ~ .menu__hamburger{
   background: url(./Images/icon-close.svg) no-repeat center;
 }
+.menu__checkbox:checked ~ .menu .menu__item {
+  padding: 0;
+  background: white;
+}
+
+.menu__checkbox:checked ~ .menu .menu__item:first-child {
+  padding-top: 0.8em;
+  border-radius: 0.3em 0.3em 0 0;
+}
+
+.menu__checkbox:checked ~ .menu .menu__item:last-child {
+  padding-bottom: 0.8em;
+  border-radius: 0 0 0.3em 0.3em;
+}
+.menu__checkbox:checked ~ .menu .menu__link {
+  padding: 0.6em 1em;
+  display: block;
+  color: darkblue;
+  font-size: 1em;
+  text-align: center;
+}
+
+@media screen {
+  .menu{
+    display: flex;
+  }
+
+  .menu__hamburger{
+    display: none;
+  }
+}
