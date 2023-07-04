@@ -121,3 +121,32 @@ z-index: 2;
     display: none;
   }
 }
+
+.header{
+  display: flex;
+  background: white;
+  padding: 1.2em 24px;
+  justify-content: space-between;
+  max-width: 1112px;
+  position: relative;
+  margin: auto;
+}
+
+.header__logo{
+  display: flex;
+  align-items: center;
+}
+
+.header .btn{
+  display: none;
+  align-self: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 1em 24px;
+  }
+  .header .btn {
+    display: block;
+  }
+}
