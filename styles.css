@@ -150,3 +150,126 @@ z-index: 2;
     display: block;
   }
 }
+
+.hero{
+  background: whitesmoke;
+  text-align: center;
+  padding-bottom: 4.8em;
+}
+
+.hero__image{
+  background: url("./Images/image-mockups.png") center bottom no-repeat, url("./Images/bg-intro-mobile.svg") center no-repeat;
+  background-size: calc(375px - (24px * 2 - 18px)), cover;
+  height: 300px;
+  margin: 0 calc(-1 * 24px);
+  margin-bottom: 1.4em;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 0;
+  }
+  .hero__main {
+    background: url("./Images/bg-intro-desktop.svg") left 35vw top 75% no-repeat;
+    background-size: 1230px;
+  }
+  .hero__grid {
+    display: grid;
+    grid-template-columns: 315px 1fr;
+    grid-template-areas: "content image";
+    min-height: 656px;
+    align-items: center;
+  }
+  .hero__image{
+    grid-area: image;
+    background: none;
+    position: absolute;
+    background: url("./Images/image-mockups.png") left 25px top -124px no-repeat;
+    background-size: auto;
+    height: 818px;
+    width: 361px;
+    right: 0;
+    margin: 0;
+  }
+  .hero__content{
+    grid-area: content;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero .title__primary {
+    font-size: 2.4em;
+  }
+  .hero .description, .hero .why-easybank__description {
+    font-size: 1em;
+  }
+  .hero__main {
+    background: url("./Images/bg-intro-desktop.svg") left 44vw top 71% no-repeat;
+  }
+  .hero__grid {
+    grid-template-columns: 460px 1fr;
+  }
+  .hero__image {
+    background: url("./Images/image-mockups.png") left 188px top -124px no-repeat;
+    width: 567px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__main {
+    background: url("./Images/bg-intro-desktop.svg") left 43vw top 70% no-repeat;
+  }
+  .hero__image {
+    background: url("./Images/image-mockups.png") left 168px top -124px no-repeat;
+    width: 667px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .hero__main {
+    background: url("./Images/bg-intro-desktop.svg") left 41vw top 70% no-repeat;
+  }
+  .hero__image {
+    background: url("./Images/image-mockups.png") left 148px top -124px no-repeat;
+    width: 767px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero__main {
+    background: url("./Images/bg-intro-desktop.svg") left 43vw top 72% no-repeat;
+  }
+  .hero__image {
+    background: url("./Images/image-mockups.png") left 84px top -124px no-repeat;
+    width: auto;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .hero__main {
+    background: url("./Images/bg-intro-desktop.svg") left 47vw top 70% no-repeat;
+  }
+  .hero__image {
+    background: url("./Images/image-mockups.png") left 132px top -124px no-repeat;
+  }
+}
+
+.why-easybank {
+  background: var(--lightGrayishBlue);
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 3em;
+}
+.why-easybank__description {
+  margin-bottom: 4em;
+}
+.why-easybank__grid {
+  display: grid;
+  grid-gap: 1.6em;
+}
+.why-easybank__feature img {
+  margin-bottom: 1.5em;
+}
+.why-easybank__feature .description, .why-easybank__feature .why-easybank__description {
+  margin-bottom: 2em;
+}
