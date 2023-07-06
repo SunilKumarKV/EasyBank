@@ -280,7 +280,7 @@ z-index: 2;
 }
 
 .why-easybank {
-  background: var(--lightGrayishBlue);
+  background: rgb(246, 247, 249);
   text-align: center;
   padding-top: 4em;
   padding-bottom: 3em;
