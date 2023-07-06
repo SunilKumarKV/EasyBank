@@ -138,12 +138,11 @@ z-index: 2;
   text-align: center;
 }
 
-@media screen {
-  .menu{
+@media screen and (min-width: 1024px) {
+  .menu {
     display: flex;
   }
-
-  .menu__hamburger{
+  .menu__hamburger {
     display: none;
   }
 }
@@ -178,7 +177,7 @@ z-index: 2;
 }
 
 .hero{
-  background: #fefdfd;
+  background: #fafafa;
   text-align: center;
   padding-bottom: 4.8em;
 }
@@ -298,4 +297,26 @@ z-index: 2;
 }
 .why-easybank__feature .description, .why-easybank__feature .why-easybank__description {
   margin-bottom: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .why-easybank {
+    padding-top: 5em;
+    text-align: left;
+  }
+  .why-easybank__description {
+    max-width: 90%;
+    font-size: 1em;
+  }
+  .why-easybank__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .why-easybank__description {
+    max-width: 65%;
+  }
+  .why-easybank__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
