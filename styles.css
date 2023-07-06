@@ -24,7 +24,7 @@ h6 {
 }
 
 .wrapper {
-  padding: 0 var(--wrapper);
+  padding: 0 24px;
   max-width: var(--desktop);
   margin: auto;
 }
