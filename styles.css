@@ -1,11 +1,10 @@
-
 body {
   margin: 0;
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
-  color: rgb(150, 152, 166);
+  color: #9698a6;
   background-color: #ffffff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -24,7 +23,7 @@ h6 {
 }
 
 .wrapper {
-  padding: 0 24px;
+  padding: 0 var(--wrapper);
   max-width: var(--desktop);
   margin: auto;
 }
@@ -46,6 +45,7 @@ h6 {
     font-size: 0.85em;
     font-weight: 400;
 }
+
 .description, .why-easybank__description {
   font-size: 0.8em;
   line-height: 1.6;
@@ -85,7 +85,7 @@ h6 {
 }
 
 .menu__link{
-  color: rgb(150, 152, 166);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 0.8em;
   font-weight: 400;
@@ -113,8 +113,9 @@ z-index: 2;
 }
 
 .menu__checkbox:checked ~ .menu__hamburger{
-  background: url(./Images/icon-close.svg) no-repeat center;
+  background: url("./Images/icon-close.svg") no-repeat center;
 }
+
 .menu__checkbox:checked ~ .menu .menu__item {
   padding: 0;
   background: white;
@@ -177,7 +178,7 @@ z-index: 2;
 }
 
 .hero{
-  background: whitesmoke;
+  background: #fefdfd;
   text-align: center;
   padding-bottom: 4.8em;
 }
@@ -280,7 +281,7 @@ z-index: 2;
 }
 
 .why-easybank {
-  background: rgb(246, 247, 249);
+  background: rgb(246, 247, 248);
   text-align: center;
   padding-top: 4em;
   padding-bottom: 3em;
