@@ -64,7 +64,6 @@ h6 {
 .btn:active {
   transform: scale(0.98);
 }
-
 .menu{
   display: none;
   list-style: none;
