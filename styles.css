@@ -86,11 +86,9 @@ h6 {
   background: url("./Images/icon-hamburger.svg") no-repeat center;
   width: 24px;
 }
-
 .menu__checkbox{
 display: none;
 }
-
 .menu__checkbox:checked ~ .menu {
 display: black;
 background: linear-gradient(to botton, var(darkblue) 0%, transparent 100%);
